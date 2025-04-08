@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 1384744803}
   m_Layer: 0
   m_Name: SpawnManager
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,6 +826,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1832960954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832960956}
+  - component: {fileID: 1832960955}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Animal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1832960955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832960954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a0f7aebe6ffd54a8f5fe4c56ca1bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1832960956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832960954}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25441206, y: 17.703049, z: -10.781351}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1999498975850130566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -936,6 +980,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3659947088639155481, guid: 5ac74f6b7c9cbbf42bc1a023064d81ec, type: 3}
+      propertyPath: sideSpawnX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659947088639155481, guid: 5ac74f6b7c9cbbf42bc1a023064d81ec, type: 3}
+      propertyPath: sideSpawnMaxZ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659947088639155481, guid: 5ac74f6b7c9cbbf42bc1a023064d81ec, type: 3}
+      propertyPath: sideSpawnMinZ
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3812571885767956794, guid: 5ac74f6b7c9cbbf42bc1a023064d81ec, type: 3}
       propertyPath: m_Name
       value: Animal_Rooster_Brown
@@ -956,6 +1012,18 @@ PrefabInstance:
     - target: {fileID: 3167163993129471040, guid: 1d1bec0caee6f3a419653a2e30289064, type: 3}
       propertyPath: m_Name
       value: Animal_Moose_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678163539696902692, guid: 1d1bec0caee6f3a419653a2e30289064, type: 3}
+      propertyPath: sideSpawnX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678163539696902692, guid: 1d1bec0caee6f3a419653a2e30289064, type: 3}
+      propertyPath: sideSpawnMaxZ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678163539696902692, guid: 1d1bec0caee6f3a419653a2e30289064, type: 3}
+      propertyPath: sideSpawnMinZ
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7456565920786364000, guid: 1d1bec0caee6f3a419653a2e30289064, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1054,6 +1122,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7212011266204007496, guid: 3bec3c9549b40c6469d4238583f812b3, type: 3}
+      propertyPath: sideSpawnX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212011266204007496, guid: 3bec3c9549b40c6469d4238583f812b3, type: 3}
+      propertyPath: sideSpawnMaxZ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212011266204007496, guid: 3bec3c9549b40c6469d4238583f812b3, type: 3}
+      propertyPath: sideSpawnMinZ
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1072,3 +1152,4 @@ SceneRoots:
   - {fileID: 6192437517482439170}
   - {fileID: 1999498975850130566}
   - {fileID: 1384744804}
+  - {fileID: 1832960956}
